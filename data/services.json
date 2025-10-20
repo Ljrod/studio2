@@ -1,0 +1,37 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "icon": "Code2",
+      "title": "Desarrollo Web a Medida",
+      "bullets": [
+        "Sitios web ultra-rápidos y optimizados para SEO.",
+        "Diseños únicos que reflejan la identidad de tu marca.",
+        "Experiencia de usuario (UX) enfocada en la conversión."
+      ],
+      "cta_link": "#contact"
+    },
+    {
+      "id": 2,
+      "icon": "PenSquare",
+      "title": "Marketing de Contenidos",
+      "bullets": [
+        "Creación de blogs y artículos que atraen a tu audiencia.",
+        "Estrategias de posicionamiento en Google (SEO).",
+        "Generación de leads a través de contenido de valor."
+      ],
+      "cta_link": "#contact"
+    },
+    {
+      "id": 3,
+      "icon": "MessageSquare",
+      "title": "Gestión de Redes Sociales",
+      "bullets": [
+        "Creación de calendarios de contenido estratégico.",
+        "Aumento de la interacción y crecimiento de la comunidad.",
+        "Campañas publicitarias segmentadas (Meta Ads)."
+      ],
+      "cta_link": "#contact"
+    }
+  ]
+}

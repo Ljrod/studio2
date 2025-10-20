@@ -1,0 +1,29 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "question": "¿Cuánto tiempo toma desarrollar un sitio web?",
+      "answer": "Un sitio web corporativo estándar suele tardar entre 4 y 6 semanas desde el inicio hasta el lanzamiento. Proyectos más complejos con funcionalidades a medida pueden requerir más tiempo. Siempre definimos un cronograma claro antes de comenzar."
+    },
+    {
+      "id": 2,
+      "question": "¿Qué plataformas utilizan para el desarrollo web?",
+      "answer": "Nos especializamos en soluciones a medida utilizando tecnologías modernas como Next.js y React. Para proyectos que requieren un gestor de contenido (CMS), trabajamos con plataformas como WordPress o Webflow, eligiendo siempre la mejor opción según las necesidades del cliente."
+    },
+    {
+      "id": 3,
+      "question": "¿Cómo miden el éxito de una campaña de marketing digital?",
+      "answer": "Definimos Indicadores Clave de Rendimiento (KPIs) al inicio de cada campaña. Estos pueden incluir el aumento del tráfico, la tasa de conversión, el costo por adquisición (CPA) y el retorno de la inversión (ROI). Te entregamos reportes periódicos para que veas el impacto real en tu negocio."
+    },
+    {
+      "id": 4,
+      "question": "¿Ofrecen soporte y mantenimiento después del lanzamiento?",
+      "answer": "Sí, todos nuestros planes de desarrollo web incluyen un período de soporte post-lanzamiento para corregir cualquier error. Además, ofrecemos planes de mantenimiento mensual para actualizaciones, copias de seguridad y soporte continuo."
+    },
+    {
+      "id": 5,
+      "question": "¿Necesito tener mi propio contenido y fotos?",
+      "answer": "Si ya tienes contenido, ¡genial! Podemos trabajar con él. Si no, nuestro equipo de marketing de contenidos puede ayudarte a crear textos persuasivos, optimizados para SEO, y a seleccionar imágenes de stock de alta calidad o coordinar una sesión de fotos profesional."
+    }
+  ]
+}

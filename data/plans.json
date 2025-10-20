@@ -1,0 +1,53 @@
+{
+  "plans": [
+    {
+      "id": 1,
+      "name": "Emprende Digital",
+      "price": "$299.000",
+      "period": "CLP / pago único",
+      "description": "El punto de partida ideal para startups y profesionales independientes.",
+      "features": [
+        "Landing Page Profesional",
+        "Diseño 100% responsivo",
+        "Formulario de contacto",
+        "Optimización SEO básica",
+        "1 mes de soporte"
+      ],
+      "featured": false,
+      "cta_text": "Comenzar Ahora"
+    },
+    {
+      "id": 2,
+      "name": "Negocio en Crecimiento",
+      "price": "$499.000",
+      "period": "CLP / pago único",
+      "description": "La solución completa para PYMES que buscan expandir su alcance y ventas.",
+      "features": [
+        "Sitio Web de hasta 5 páginas",
+        "Diseño personalizado y a medida",
+        "Integración con Redes Sociales",
+        "Blog administrable (CMS)",
+        "Optimización SEO avanzada",
+        "3 meses de soporte"
+      ],
+      "featured": true,
+      "cta_text": "Elegir Plan Pro"
+    },
+    {
+      "id": 3,
+      "name": "Corporativo",
+      "price": "A Medida",
+      "period": "solución personalizada",
+      "description": "Para empresas consolidadas que requieren funcionalidades complejas y escalabilidad.",
+      "features": [
+        "Todo lo del plan Crecimiento",
+        "Integraciones con APIs y sistemas",
+        "Funcionalidades E-commerce",
+        "Consultoría estratégica",
+        "Soporte prioritario"
+      ],
+      "featured": false,
+      "cta_text": "Cotizar Proyecto"
+    }
+  ]
+}

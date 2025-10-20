@@ -1,0 +1,25 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "quote": "El equipo de Laibell no solo nos entregó un sitio web espectacular, sino que nos guiaron en toda la estrategia digital. Nuestras ventas online aumentaron un 40% en tres meses.",
+      "name": "Carla Rojas",
+      "company": "CEO de InovaTech",
+      "avatar_url": "https://picsum.photos/seed/testi1/100/100"
+    },
+    {
+      "id": 2,
+      "quote": "Desde que trabajamos con Laibell, nuestra presencia en redes sociales es mucho más profesional y hemos conectado genuinamente con nuestra audiencia. ¡Totalmente recomendados!",
+      "name": "Marcos Valenzuela",
+      "company": "Fundador de Café Origen",
+      "avatar_url": "https://picsum.photos/seed/testi2/100/100"
+    },
+    {
+      "id": 3,
+      "quote": "El proceso de desarrollo fue transparente y muy colaborativo. Entendieron perfectamente nuestras necesidades y el resultado superó todas nuestras expectativas. Un socio estratégico clave.",
+      "name": "Sofía Castro",
+      "company": "Directora de Finanzas Corp",
+      "avatar_url": "https://picsum.photos/seed/testi3/100/100"
+    }
+  ]
+}
