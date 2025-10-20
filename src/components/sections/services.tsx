@@ -4,9 +4,14 @@ import { services } from "@/data/services.json";
 import { type Service } from "@/lib/types";
 import * as Icons from "lucide-react";
 
-const LucideIcon = ({ name, className }: { name: keyof typeof Icons; className?: string }) => {
-  const Icon = Icons[name];
-  if (!Icon) return null;
+const LucideIcon = ({ name, className }: { name: string; className?: string }) => {
+  const Icon = Icons[name as keyof typeof Icons];
+  if (!Icon || typeof Icon !== 'object') {
+    // Si el ícono no se encuentra o no es un componente válido, no renderizar nada.
+    // Esto evita errores si el JSON contiene un nombre de ícono incorrecto.
+    console.warn(`Icono no encontrado: ${name}`);
+    return null;
+  }
   return <Icon className={className} />;
 };
 

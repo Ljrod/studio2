@@ -1,8 +1,6 @@
-import { type LucideIcon } from "lucide-react";
-
 export interface Service {
   id: number;
-  icon: keyof typeof import("lucide-react");
+  icon: string;
   title: string;
   bullets: string[];
   cta_link: string;
