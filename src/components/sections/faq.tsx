@@ -17,8 +17,8 @@ export default function Faq() {
         </div>
         <Accordion type="single" collapsible className="w-full space-y-4">
           {(faqs as FaqItem[]).map((faq) => (
-             <AccordionItem key={faq.id} value={`item-${faq.id}`} className="bg-white/5 border border-white/10 rounded-lg overflow-hidden transition-all duration-300">
-               <AccordionTrigger className="flex justify-between items-center p-6 cursor-pointer list-none font-medium text-lg hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ring no-underline">
+             <AccordionItem key={faq.id} value={`item-${faq.id}`} className="group bg-white/5 border border-white/10 rounded-lg overflow-hidden transition-all duration-300">
+               <AccordionTrigger className="flex justify-between items-center p-6 cursor-pointer list-none font-medium text-lg text-left hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ring no-underline">
                  {faq.question}
                </AccordionTrigger>
                <AccordionContent className="px-6 pb-6 text-foreground/80">
