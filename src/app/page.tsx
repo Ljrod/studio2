@@ -5,13 +5,13 @@ import Testimonials from "@/components/sections/testimonials";
 import Faq from "@/components/sections/faq";
 import Contact from "@/components/sections/contact";
 
-import { faqs } from "@/data/faqs.json";
+import faqsData from "@/data/faqs.json";
 
 export default function Home() {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
+    "mainEntity": faqsData.faqs.map(faq => ({
       "@type": "Question",
       "name": faq.question,
       "acceptedAnswer": {

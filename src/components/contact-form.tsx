@@ -16,7 +16,6 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
 import { submitContactForm } from "@/app/actions";
-import { type Service } from "@/lib/types";
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -27,7 +26,7 @@ function SubmitButton() {
   );
 }
 
-export default function ContactForm({ services }: { services: Service[] }) {
+export default function ContactForm({ serviceOptions }: { serviceOptions: string[] }) {
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
   const [state, formAction] = useFormState(submitContactForm, {
@@ -77,9 +76,9 @@ export default function ContactForm({ services }: { services: Service[] }) {
             <SelectValue placeholder="Selecciona un servicio" />
           </SelectTrigger>
           <SelectContent>
-            {services.map((service) => (
-              <SelectItem key={service.id} value={service.title}>
-                {service.title}
+            {serviceOptions.map((option) => (
+              <SelectItem key={option} value={option}>
+                {option}
               </SelectItem>
             ))}
           </SelectContent>

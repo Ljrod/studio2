@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { testimonials } from "@/data/testimonials.json";
+import testimonialsData from "@/data/testimonials.json";
 import { type Testimonial } from "@/lib/types";
 
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
@@ -36,7 +36,7 @@ export default function Testimonials() {
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">Historias de éxito de empresas que transformaron su presencia digital con Laibell.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {(testimonials as Testimonial[]).map((testimonial) => (
+          {(testimonialsData.testimonials as Testimonial[]).map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { services } from "@/data/services.json";
+import servicesData from "@/data/services.json";
 import { type Service } from "@/lib/types";
 import * as Icons from "lucide-react";
 
@@ -50,7 +50,7 @@ export default function Services() {
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">Soluciones integrales para llevar tu negocio al siguiente nivel.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {(services as Service[]).map((service) => (
+          {(servicesData.services as Service[]).map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}
         </div>

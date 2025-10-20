@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { plans } from "@/data/plans.json";
+import plansData from "@/data/plans.json";
 import { type Plan } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
@@ -49,7 +49,7 @@ export default function Plans() {
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">Elige el impulso perfecto para tu proyecto. Sin sorpresas, con resultados claros.</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          {(plans as Plan[]).map((plan) => (
+          {(plansData.plans as Plan[]).map((plan) => (
             <PlanCard key={plan.id} plan={plan} />
           ))}
         </div>

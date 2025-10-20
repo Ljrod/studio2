@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { faqs } from "@/data/faqs.json";
+import faqsData from "@/data/faqs.json";
 import { type FaqItem } from "@/lib/types";
 
 export default function Faq() {
@@ -16,7 +16,7 @@ export default function Faq() {
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">Respuestas a tus dudas más comunes. Si no encuentras lo que buscas, ¡contáctanos!</p>
         </div>
         <Accordion type="single" collapsible className="w-full space-y-4">
-          {(faqs as FaqItem[]).map((faq) => (
+          {(faqsData.faqs as FaqItem[]).map((faq) => (
              <AccordionItem key={faq.id} value={`item-${faq.id}`} className="group bg-white/5 border border-white/10 rounded-lg overflow-hidden transition-all duration-300">
                <AccordionTrigger className="flex justify-between items-center p-6 cursor-pointer list-none font-medium text-lg text-left hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ring no-underline">
                  {faq.question}
