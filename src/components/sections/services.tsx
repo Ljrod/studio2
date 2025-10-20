@@ -6,18 +6,25 @@ import { Check } from "lucide-react";
 import * as React from "react";
 import * as Lucide from "lucide-react";
 
-type LucideIcon = React.ElementType;
+type LucideIcon = React.ComponentType<React.SVGProps<SVGSVGElement>>;
+
+const LUCIDE_INDEX = Lucide as unknown as Record<string, LucideIcon>;
 
 function getIconByName(name: string): LucideIcon | null {
-  const iconName = name.charAt(0).toUpperCase() + name.slice(1);
-  const Icon = (Lucide as Record<string, LucideIcon>)[iconName];
-  return Icon || null;
+  if (!name) return null;
+  // probar nombre tal cual y versión capitalizada (p.ej. "code2" → "Code2")
+  const candidates = [name, name.charAt(0).toUpperCase() + name.slice(1)];
+  for (const key of candidates) {
+    const Icon = LUCIDE_INDEX[key];
+    if (Icon) return Icon;
+  }
+  console.warn(`Icono no encontrado: ${name}`);
+  return null;
 }
 
 const IconRenderer = ({ name, className }: { name: string; className?: string }) => {
   const Icon = getIconByName(name);
   if (!Icon) {
-    console.warn(`Icono no encontrado: ${name}`);
     return null;
   }
   return <Icon className={className} aria-hidden="true" />;
