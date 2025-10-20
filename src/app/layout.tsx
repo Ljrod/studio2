@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
+import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+
+const spaceGrotesk = Space_Grotesk({ 
+  subsets: ["latin"],
+  weight: "700",
+  variable: "--font-headline"
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body"
+});
 
 export const metadata: Metadata = {
   title: {
@@ -21,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Laibell",
     images: [
       {
-        url: "/og-image.jpg", // Debes crear esta imagen en /public
+        url: "/og-image.jpg", 
         width: 1200,
         height: 630,
       },
@@ -48,13 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="dark">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-      </head>
+    <html lang="es" className={`${spaceGrotesk.variable} ${inter.variable} dark`}>
       <body className={cn("min-h-screen bg-background font-body antialiased")}>
         <Header />
         <main>{children}</main>
